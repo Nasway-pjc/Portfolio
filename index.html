@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nasway | Портфолио</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="terminal">
+            <div class="terminal-header">
+                <span class="terminal-title">nasway@portfolio:~$</span>
+                <div class="terminal-buttons">
+                    <span class="btn-min">_</span>
+                    <span class="btn-max">□</span>
+                    <span class="btn-close">×</span>
+                </div>
+            </div>
+            
+            <div class="terminal-content">
+                <div id="output"></div>
+                <div class="input-line">
+                    <span class="prompt">></span>
+                    <span id="cursor" class="cursor">█</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="imageContainer" class="image-container"></div>
+    <video id="videoPlayer" class="video-player" autoplay></video>
+    
+    <div id="bioModal" class="portfolio-modal">
+        <button class="modal-close" onclick="closeBio()">×</button>
+        <div id="bioContent"></div>
+    </div>
+    
+    <div id="portfolioModal" class="portfolio-modal">
+        <button class="modal-close" onclick="closeCoilRust()">×</button>
+        <div id="portfolioContent"></div>
+    </div>
+
+    <audio id="clickSound"></audio>
+    <audio id="successSound"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
